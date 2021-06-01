@@ -1,15 +1,7 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
+  selector: 'app-header',
+  templateUrl: './header.component.html',
 })
-
-export class HeaderComponent {
-    @Output() pageSelected = new EventEmitter<string>();
-
-    onSelect(page: string) {
-        this.pageSelected.emit(page);
-    }
-
-}
+export class HeaderComponent {}
