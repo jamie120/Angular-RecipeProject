@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">
+            New Recipe
+        </button>
+        <filter-textbox (changed)="filter($event)"></filter-textbox>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-recipe-item
+        *ngFor="let recipeEl of filteredRecipes"
+        [recipe]="recipeEl"
+        ></app-recipe-item>
+    </div>
+</div>
+
