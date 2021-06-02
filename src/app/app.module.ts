@@ -15,6 +15,7 @@ import { FilterTextboxComponent } from './recipes/recipe-list/filter-textbox.com
 import { RecipeService } from './recipes/recipe.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { AppRoutingModule } from './app-routing.module';
+import { DefaultRecipeComponent } from './recipes/default-recipe/default-recipe.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     RecipesComponent,
     DropdownDirective,
     FilterTextboxComponent,
+    DefaultRecipeComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [ShoppingListService],
