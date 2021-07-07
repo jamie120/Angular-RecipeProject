@@ -16,6 +16,7 @@ import { RecipeService } from './recipes/recipe.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { AppRoutingModule } from './app-routing.module';
 import { DefaultRecipeComponent } from './recipes/default-recipe/default-recipe.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DefaultRecipeComponent } from './recipes/default-recipe/default-recipe.
     DropdownDirective,
     FilterTextboxComponent,
     DefaultRecipeComponent,
+    RecipeEditComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [ShoppingListService],

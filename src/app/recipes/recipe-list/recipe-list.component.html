@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12">
-    <button class="btn btn-success">New Recipe</button>
+    <button (click)="onNewRecipe()" class="btn btn-success">New Recipe</button>
     <filter-textbox (changed)="filter($event)"></filter-textbox>
   </div>
 </div>
